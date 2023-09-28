@@ -4,12 +4,12 @@
 """
 
 # Harmful solution
-my_container = ["Larry", "Moe", "Curly"]
-index = 0
+# my_container = ["Larry", "Moe", "Curly"]
+# index = 0
 
-for element in my_container:
-    print("{} {}".format(index, element))
-index += 1
+# for element in my_container:
+#     print("{} {}".format(index, element))
+# index += 1
 
 
 # Idiomatic solution

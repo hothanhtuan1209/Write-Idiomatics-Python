@@ -5,11 +5,11 @@
 """
 
 # Harmful solution
-is_generic_name = False
-name = "Tom"
+# is_generic_name = False
+# name = "Tom"
 
-if name == "Tom" or name == "Dick" or name == "Harry":
-    is_generic_name = True
+# if name == "Tom" or name == "Dick" or name == "Harry":
+#     is_generic_name = True
 
 
 # Idiomatic solution

@@ -4,12 +4,12 @@
 """
 
 # Harmful solution
-foo = True
-value = 0
+# foo = True
+# value = 0
 
-if foo:
-    value = 1
-print(value)
+# if foo:
+#     value = 1
+# print(value)
 
 
 # Idiomatic solution

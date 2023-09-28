@@ -5,12 +5,12 @@
 """
 
 # Harmful solution
-name = "Jeff"
-address = "New York, NY"
+# name = "Jeff"
+# address = "New York, NY"
 
-if name:
-    print(name)
-print(address)
+# if name:
+#     print(name)
+# print(address)
 
 
 # Idiomatic solution

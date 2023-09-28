@@ -4,18 +4,18 @@
 """
 
 # Harmful solution
-for user in get_all_users():
-    has_malformed_email_address = False
-    print("Checking {}".format(user))
+# for user in get_all_users():
+#     has_malformed_email_address = False
+#     print("Checking {}".format(user))
 
-    for email_address in user.get_all_email_addresses():
-        if email_is_malformed(email_address):
-            has_malformed_email_address = True
-            print("Has a malformed email address!")
-            break
+#     for email_address in user.get_all_email_addresses():
+#         if email_is_malformed(email_address):
+#             has_malformed_email_address = True
+#             print("Has a malformed email address!")
+#             break
 
-if not has_malformed_email_address:
-    print("All email addresses are valid!")
+# if not has_malformed_email_address:
+#     print("All email addresses are valid!")
 
 
 # Idiomatic solution

@@ -4,12 +4,12 @@
 """
 
 # Harmful solution
-my_list = ["Larry", "Moe", "Curly"]
-index = 0
+# my_list = ["Larry", "Moe", "Curly"]
+# index = 0
 
-while index < len(my_list):
-    print(my_list[index])
-index += 1
+# while index < len(my_list):
+#     print(my_list[index])
+# index += 1
 
 
 # Idiomatic solution
