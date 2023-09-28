@@ -7,6 +7,7 @@
 # You shouldn't do like this
 import requests
 
+
 def get_json_response(url):
     try:
         r = requests.get(url)
@@ -17,8 +18,10 @@ def get_json_response(url):
 
     return None
 
+
 # You should do like this
 import requests
+
 
 def get_json_response(url):
     return requests.get(url).json()
@@ -26,6 +29,7 @@ def get_json_response(url):
 
 # If we need to make note of the exception, we
 # would write the function this way...
+
 
 def alternate_get_json_response(url):
     try:
