@@ -3,7 +3,9 @@
 - In Python, functions are objects that can be assigned to variables, passed as arguments, and returned as results.
 """
 
-# You shouldn't do like this
+import operator as op
+
+# Harmful solution
 def print_addition_table():
     for x in range(1, 3):
         for y in range(1, 3):
@@ -34,10 +36,7 @@ print_multiplication_table()
 print_division_table()
 
 
-# You should do like this
-import operator as op
-
-
+# Idiomatic solution
 def print_table(operator):
     for x in range(1, 3):
         for y in range(1, 3):
