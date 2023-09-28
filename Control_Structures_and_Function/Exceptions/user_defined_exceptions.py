@@ -8,27 +8,37 @@
 # You shouldn't do like this
 import requests
 
+
 def fetch_url_contents(url):
     response = requests.get(url)
     print(response.status_code)
-    
+
     if response.status_code != 200:
-        raise RuntimeError('Unable to fetch contents. Received status code {}'.format(response.status_code))
+        raise RuntimeError(
+            "Unable to fetch contents. Received status code {}".format(
+                response.status_code
+            )
+        )
 
     return response.content
+
 
 # You should do like this
 import requests
 
+
 class URLFetchError(Exception):
     pass
 
+
 def fetch_url_contents(url):
     response = requests.get(url)
-    
+
     if response.status_code != 200:
         raise URLFetchError(
-            'Unable to fetch contents. Received status code {}'.format(
-        response.status_code))
+            "Unable to fetch contents. Received status code {}".format(
+                response.status_code
+            )
+        )
 
     return response.content
