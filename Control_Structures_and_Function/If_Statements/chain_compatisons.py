@@ -3,18 +3,20 @@
 - It both makes the statements more concise and can have a positive effect on performance.
 """
 
-# You shouldn't do like this
+# Harmful solution
+# def my_function():
+#     x = 5
+#     y = 10
+#     z = 15
+
+#     if x <= y and y <= z:
+#         return True
+
+
+# Idiomatic solution
 def my_function():
-    x = 5
-    y = 10
-    z = 15
+    """Check if x is less than or equal to y and y is less than or equal to z."""
 
-    if x <= y and y <= z:
-        return True
-
-
-# You should do like this
-def my_function():
     x = 5
     y = 10
     z = 15

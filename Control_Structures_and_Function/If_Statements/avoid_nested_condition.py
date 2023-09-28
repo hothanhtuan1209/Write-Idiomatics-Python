@@ -3,24 +3,34 @@
 - Do not nest the condition to avoid readers not understanding your code
 """
 
-# You shouldn't do like this
-def process_login_form(request):
-    if request.form.get("username") and request.form.get("password"):
-        if captcha_displayed(request) and captcha_passed(request):
-            if authenticate_user(request.form["username"], request.form["password"]):
-                current_user.login()
-                return redirect(HOME_PAGE)
-            else:
-                return "Unable to authenticate with provided username and password", 403
-        else:
-            if captcha_displayed(requet):
-                return "Captcha entry failed. Please resubmit", 403
-    else:
-        return "Missing username or password. Both are required", 400
+# Harmful solution
+# def process_login_form(request):
+#     if request.form.get("username") and request.form.get("password"):
+#         if captcha_displayed(request) and captcha_passed(request):
+#             if authenticate_user(request.form["username"], request.form["password"]):
+#                 current_user.login()
+#                 return redirect(HOME_PAGE)
+#             else:
+#                 return "Unable to authenticate with provided username and password", 403
+#         else:
+#             if captcha_displayed(requet):
+#                 return "Captcha entry failed. Please resubmit", 403
+#     else:
+#         return "Missing username or password. Both are required", 400
 
 
-# You should do like this
+# Idiomatic solution
 def process_login_form(request):
+    """
+    Process login form submission and handle authentication.
+
+    Args:
+        request (dict): HTTP request containing form data.
+
+    Returns:
+        tuple: Response message (str), HTTP status code (int).
+    """
+
     if "username" not in request.form:
         return "Please enter a value for username", 400
 

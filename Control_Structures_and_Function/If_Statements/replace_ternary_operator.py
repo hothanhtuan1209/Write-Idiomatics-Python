@@ -3,7 +3,7 @@
 - Python does not have the ternary operator (e.g. “x ? True : False”) that a number of other languages have.
 """
 
-# You shouldn't do like this
+# Harmful solution
 foo = True
 value = 0
 
@@ -12,7 +12,7 @@ if foo:
 print(value)
 
 
-# You should do like this
+# Idiomatic solution
 foo = True
 value = 1 if foo else 0
 print(value)

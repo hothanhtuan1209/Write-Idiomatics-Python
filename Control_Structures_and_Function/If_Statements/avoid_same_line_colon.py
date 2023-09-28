@@ -4,7 +4,7 @@
 - if, elif, and else statements should always be on their own line. No code should follow the :.
 """
 
-# You shouldn't do like this
+# Harmful solution
 name = "Jeff"
 address = "New York, NY"
 
@@ -13,7 +13,7 @@ if name:
 print(address)
 
 
-# You should do like this
+# Idiomatic solution
 name = "Jeff"
 address = "New York, NY"
 

@@ -4,7 +4,7 @@
 - Using a check for existence in a list or set makes the code more clear and improves readability.
 """
 
-# You shouldn't do like this
+# Harmful solution
 is_generic_name = False
 name = "Tom"
 
@@ -12,6 +12,6 @@ if name == "Tom" or name == "Dick" or name == "Harry":
     is_generic_name = True
 
 
-# You should do like this
+# Idiomatic solution
 name = "Tom"
 is_generic_name = name in ("Tom", "Dick", "Harry")
