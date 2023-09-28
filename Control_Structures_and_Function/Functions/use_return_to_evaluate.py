@@ -11,6 +11,7 @@ def all_equal(a, b, c):
         result = True
     return result
 
+
 # You should do like this
 def all_equal(a, b, c):
     return a == b == c

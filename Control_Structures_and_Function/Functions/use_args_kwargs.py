@@ -5,22 +5,27 @@
 
 # You shouldn't do like this
 def wrap_add_for_console_output(x, y):
-    print('--------------------------------')
+    print("--------------------------------")
     print(str(x + y))
-    print('--------------------------------')
+    print("--------------------------------")
 
-wrap_add_for_console_output(2,3)
+
+wrap_add_for_console_output(2, 3)
+
 
 # You should do like this
 def for_console_output(func):
     def wrapper(*args, **kwargs):
-        print('--------------------------------')
+        print("--------------------------------")
         print(str(func(*args, **kwargs)))
-        print('--------------------------------')
-    
+        print("--------------------------------")
+
     return wrapper
+
 
 @for_console_output
 def add(x, y):
     return x + y
+
+
 add(3, 2)
