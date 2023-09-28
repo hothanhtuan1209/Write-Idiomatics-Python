@@ -12,11 +12,12 @@ def my_function():
     if x <= y and y <= z:
         return True
 
+
 # You should do like this
 def my_function():
     x = 5
     y = 10
     z = 15
-    
+
     if x <= y <= z:
         return True

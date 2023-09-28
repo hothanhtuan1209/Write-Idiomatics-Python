@@ -11,6 +11,7 @@ if foo:
     value = 1
 print(value)
 
+
 # You should do like this
 foo = True
 value = 1 if foo else 0

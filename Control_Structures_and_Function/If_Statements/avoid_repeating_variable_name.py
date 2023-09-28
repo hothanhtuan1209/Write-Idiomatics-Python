@@ -6,11 +6,12 @@
 
 # You shouldn't do like this
 is_generic_name = False
-name = 'Tom'
+name = "Tom"
 
-if name == 'Tom' or name == 'Dick' or name == 'Harry':
+if name == "Tom" or name == "Dick" or name == "Harry":
     is_generic_name = True
 
+
 # You should do like this
-name = 'Tom'
-is_generic_name = name in ('Tom', 'Dick', 'Harry')
+name = "Tom"
+is_generic_name = name in ("Tom", "Dick", "Harry")

@@ -5,15 +5,17 @@
 """
 
 # You shouldn't do like this
-name = 'Jeff'
-address = 'New York, NY'
+name = "Jeff"
+address = "New York, NY"
 
-if name: print(name)
+if name:
+    print(name)
 print(address)
 
+
 # You should do like this
-name = 'Jeff'
-address = 'New York, NY'
+name = "Jeff"
+address = "New York, NY"
 
 if name:
     print(name)
