@@ -4,7 +4,7 @@
 """
 
 # You shouldn't do like this
-my_list = ['Larry', 'Moe', 'Curly']
+my_list = ["Larry", "Moe", "Curly"]
 index = 0
 
 while index < len(my_list):
@@ -12,7 +12,7 @@ while index < len(my_list):
 index += 1
 
 # You should do like this
-my_list = ['Larry', 'Moe', 'Curly']
+my_list = ["Larry", "Moe", "Curly"]
 
 for element in my_list:
     print(element)
