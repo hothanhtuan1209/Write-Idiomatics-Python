@@ -4,22 +4,33 @@
 - And "Easier to Ask for Forgiveness than Permission (EAFP)," which focuses on catching exceptions when things go wrong, emphasizing code clarity and efficiency.
 """
 
-# You shouldn't do like this
+# Harmful solution
+# def get_log_level(config_dict):
+#     if "ENABLE_LOGGING" in config_dict:
+#         if config_dict["ENABLE_LOGGING"] != True:
+#             return None
+#         elif not "DEFAULT_LOG_LEVEL" in config_dict:
+#             return None
+#         else:
+#             return config_dict["DEFAULT_LOG_LEVEL"]
+
+#     else:
+#         return None
+
+
+# Idiomatic solution
 def get_log_level(config_dict):
-    if "ENABLE_LOGGING" in config_dict:
-        if config_dict["ENABLE_LOGGING"] != True:
-            return None
-        elif not "DEFAULT_LOG_LEVEL" in config_dict:
-            return None
-        else:
-            return config_dict["DEFAULT_LOG_LEVEL"]
+    """
+    Get the log level from a configuration dictionary.
 
-    else:
-        return None
+    Parameters:
+    config_dict (dict): A dictionary containing configuration settings.
 
-
-# You should do like this
-def get_log_level(config_dict):
+    Returns:
+    str or None: The log level as a string if logging is enabled, or None if
+    the necessary keys are not present in the configuration dictionary.
+    """
+    
     try:
         if config_dict["ENABLE_LOGGING"]:
             return config_dict["DEFAULT_LOG_LEVEL"]

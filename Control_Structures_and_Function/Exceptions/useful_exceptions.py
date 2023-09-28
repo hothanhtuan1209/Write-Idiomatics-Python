@@ -4,34 +4,32 @@
 - This leads to a loss of crucial debugging information.
 """
 
-# You shouldn't do like this
 import requests
 
+# Harmful solution
+# def get_json_response(url):
+#     try:
+#         r = requests.get(url)
+#         return r.json()
 
+#     except:
+#         print("Oops, something went wrong!")
+
+#     return None
+
+
+# Idiomatic solution
 def get_json_response(url):
-    try:
-        r = requests.get(url)
-        return r.json()
+    """Fetch JSON data from a given URL and return it as a Python object."""
 
-    except:
-        print("Oops, something went wrong!")
-
-    return None
-
-
-# You should do like this
-import requests
-
-
-def get_json_response(url):
     return requests.get(url).json()
-
 
 # If we need to make note of the exception, we
 # would write the function this way...
 
-
 def alternate_get_json_response(url):
+    """Fetch JSON data from a given URL, log any exceptions, and re-raise them."""
+
     try:
         r = requests.get(url)
         return r.json()
