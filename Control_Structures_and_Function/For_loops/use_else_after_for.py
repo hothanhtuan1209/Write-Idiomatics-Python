@@ -3,7 +3,7 @@
 - In example, I use else to execute code instead of if not after a for loop concludes
 """
 
-# You shouldn't do like this
+# Harmful solution
 for user in get_all_users():
     has_malformed_email_address = False
     print("Checking {}".format(user))
@@ -18,7 +18,7 @@ if not has_malformed_email_address:
     print("All email addresses are valid!")
 
 
-# You should do like this
+# Idiomatic solution
 for user in get_all_users():
     print("Checking {}".format(user))
 

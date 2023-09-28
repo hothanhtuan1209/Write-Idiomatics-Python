@@ -3,7 +3,7 @@
 - Other languages explicitly declaring a variable to track the index of a container in a loop but in python, the enumerate built-in function handles this role.
 """
 
-# You shouldn't do like this
+# Harmful solution
 my_container = ["Larry", "Moe", "Curly"]
 index = 0
 
@@ -12,7 +12,7 @@ for element in my_container:
 index += 1
 
 
-# You should do like this
+# Idiomatic solution
 my_container = ["Larry", "Moe", "Curly"]
 for index, element in enumerate(my_container):
     print("{} {}".format(index, element))
