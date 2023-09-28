@@ -4,14 +4,15 @@
 """
 
 # You shouldn't do like this
-my_container = ['Larry', 'Moe', 'Curly']
+my_container = ["Larry", "Moe", "Curly"]
 index = 0
 
 for element in my_container:
-    print('{} {}'.format(index, element))
+    print("{} {}".format(index, element))
 index += 1
 
+
 # You should do like this
-my_container = ['Larry', 'Moe', 'Curly']
+my_container = ["Larry", "Moe", "Curly"]
 for index, element in enumerate(my_container):
-    print('{} {}'.format(index, element))
+    print("{} {}".format(index, element))
