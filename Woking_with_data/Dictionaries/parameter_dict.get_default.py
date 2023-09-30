@@ -4,12 +4,12 @@
 """
 
 # Harmful solution
-log_severity = None
+# log_severity = None
 
-if 'severity' in configuration:
-    log_severity = configuration['severity']
-else:
-    log_severity = 'Info'
+# if 'severity' in configuration:
+#     log_severity = configuration['severity']
+# else:
+#     log_severity = 'Info'
 
 
 # Idiomatic solution

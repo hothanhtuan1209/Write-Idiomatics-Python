@@ -4,10 +4,10 @@
 """
 
 # Harmful solution
-def get_suffix(word):
-    word_length = len(word)
+# def get_suffix(word):
+#     word_length = len(word)
 
-    return word[word_length - 2 :]
+#     return word[word_length - 2 :]
 
 
 # Idiomatic solution

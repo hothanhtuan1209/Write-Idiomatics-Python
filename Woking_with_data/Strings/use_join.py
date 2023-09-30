@@ -5,11 +5,11 @@
 """
 
 # Harmful solution
-result_list = ["True", "False", "File not found"]
-result_string = ""
+# result_list = ["True", "False", "File not found"]
+# result_string = ""
 
-for result in result_list:
-    result_string += result
+# for result in result_list:
+#     result_string += result
 
 
 # Idiomatic solution

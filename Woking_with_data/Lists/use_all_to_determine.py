@@ -5,12 +5,12 @@
 """
 
 # Harmful solution
-def contains_zero(iterable):
-    for e in iterable:
-        if e == 0:
-            return True
+# def contains_zero(iterable):
+#     for e in iterable:
+#         if e == 0:
+#             return True
 
-    return False
+#     return False
 
 
 # Idiomatic solution

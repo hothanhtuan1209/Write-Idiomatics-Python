@@ -3,18 +3,18 @@
 """
 
 # Harmful solution
-hash_value = 0
-character_hash = {
-    "a": 97,
-    "b": 98,
-    "c": 99,
-    # ...
-    "y": 121,
-    "z": 122,
-}
+# hash_value = 0
+# character_hash = {
+#     "a": 97,
+#     "b": 98,
+#     "c": 99,
+#     # ...
+#     "y": 121,
+#     "z": 122,
+# }
 
-for e in some_string:
-    hash_value += character_hash[e]
+# for e in some_string:
+#     hash_value += character_hash[e]
 
 
 # Idiomatic solution

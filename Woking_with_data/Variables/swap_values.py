@@ -4,11 +4,11 @@
 """
 
 # Harmful solution
-foo = "Foo"
-bar = "Bar"
-temp = foo
-foo = bar
-bar = temp
+# foo = "Foo"
+# bar = "Bar"
+# temp = foo
+# foo = bar
+# bar = temp
 
 
 # Idiomatic solution

@@ -3,9 +3,9 @@
 """
 
 # Harmful solution
-x = "foo"
-y = "foo"
-z = "foo"
+# x = "foo"
+# y = "foo"
+# z = "foo"
 
 
 # Idiomatic solution

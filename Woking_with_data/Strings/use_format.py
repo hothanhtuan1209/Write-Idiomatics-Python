@@ -5,12 +5,12 @@
 """
 
 # Harmful solution
-def get_formatted_user_info_worst(user):
-    return "Name: " + user.name + ", Age: " + str(user.age) + ", Sex: " + user.sex
+# def get_formatted_user_info_worst(user):
+#     return "Name: " + user.name + ", Age: " + str(user.age) + ", Sex: " + user.sex
 
 
-def get_formatted_user_info_slightly_better(user):
-    return "Name: %s, Age: %i, Sex: %c" % (user.name, user.age, user.sex)
+# def get_formatted_user_info_slightly_better(user):
+#     return "Name: %s, Age: %i, Sex: %c" % (user.name, user.age, user.sex)
 
 
 # Harmful solution
