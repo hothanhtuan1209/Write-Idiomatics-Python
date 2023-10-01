@@ -4,6 +4,8 @@
 - This approach can be applied to various scenarios, showcasing Python's flexibility and the power of treating everything as an object.
 """
 
+import operator as op
+
 # Harmful solution
 # def apply_operation(left_operand, right_operand, operator):
 #     if operator == "+":
@@ -21,7 +23,17 @@
 
 # Idiomatic solution
 def apply_operation(left_operand, right_operand, operator):
-    import operator as op
+    """
+    Apply a mathematical operation to two operands.
+
+    Args:
+        left_operand (float): The left operand.
+        right_operand (float): The right operand.
+        operator (str): The operator symbol ('+', '-', '*', '/').
+
+    Returns:
+        float: The result of the operation.
+    """
 
     operator_mapper = {"+": op.add, "-": op.sub, "*": op.mul, "/": op.truediv}
 
