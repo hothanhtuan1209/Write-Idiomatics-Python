@@ -5,10 +5,10 @@
 """
 
 # Harmful solution
-(name, age, temp, temp2) = get_user_info(user)
+# (name, age, temp, temp2) = get_user_info(user)
 
-if age > 21:
-    output = '{name} can drink!'.format(name=name)
+# if age > 21:
+#     output = '{name} can drink!'.format(name=name)
 # "Wait, where are temp and temp2 being used?"
 
 
