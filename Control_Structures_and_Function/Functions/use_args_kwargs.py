@@ -25,18 +25,18 @@ def for_console_output(func):
     return wrapper
 
 @for_console_output
-def add(x, y):
+def add(first_number, second_number):
     """
     Add two numbers and return the result.
 
     Args:
-        x (int): The first number.
-        y (int): The second number.
+        first_number (int): The first number.
+        second_number (int): The second number.
 
     Returns:
-        int: The sum of x and y.
+        int: The sum of first_number and second_number.
     """
 
-    return x + y
+    return first_number + second_number
 
 add(3, 2)
