@@ -5,9 +5,9 @@
 """
 
 # Harmful solution
-# def all_equal(a, b, c):
+# def all_equal(first_parameter, second_parameter, third_parameter):
 #     result = False
-#     if a == b == c:
+#     if first_parameter == second_parameter == third_parameter:
 #         result = True
 #     return result
 
