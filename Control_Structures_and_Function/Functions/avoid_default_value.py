@@ -15,24 +15,24 @@
 
 
 # Idiomatic solution
-def f(a, L=None):
+def examp(value_append, list_examp=None):
     """
     Append a value to a list or create a new list if not provided.
 
     Args:
-        a: The value to append.
-        L (list, optional): The list to append the value to. If not provided, a new list is created.
+        value_append: The value to append.
+        list_examp (list, optional): The list to append the value to. If not provided, a new list is created.
 
     Returns:
         list: The list with the appended value.
     """
 
-    if L is None:
-        L = []
-        L.append(a)
+    if list_examp is None:
+        list_examp = []
+        list_examp.append(value_append)
 
-    return L
+    return list_examp
 
-print(f(1))
-print(f(2))
-print(f(3))
+print(examp(1))
+print(examp(2))
+print(examp(3))
