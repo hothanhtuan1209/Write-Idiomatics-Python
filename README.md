@@ -16,5 +16,11 @@ Repositories includes 4 chapters:
 2. Checkout to branch develop
 > git checkout develop
 
+3. Use cd command to move to folder
+> cd + 'file name'
+- example: cd Woking_with_data
+
+4. Open file in folder and run code
+
 ## Contribute
  - If you want to contribute to this project, please create a pull request and clearly describe the changes you propose
