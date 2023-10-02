@@ -13,17 +13,17 @@
 
 
 # Idiomatic solution
-def all_equal(a, b, c):
+def all_equal(first_parameter, second_parameter, third_parameter):
     """
     Check if three values are all equal.
 
-    Args:
-        a: The first value.
-        b: The second value.
-        c: The third value.
+    Parameters:
+        first_parameter: The first value.
+        second_parameter: The second value.
+        third_parameter: The third value.
 
     Returns:
         bool: True
     """
     
-    return a == b == c
+    return first_parameter == second_parameter == third_parameter
