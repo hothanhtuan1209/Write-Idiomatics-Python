@@ -4,9 +4,9 @@
 """
 
 # Harmful solution
-# def wrap_add_for_console_output(x, y):
+# def wrap_add_for_console_output(first_number, second_number):
 #     print("--------------------------------")
-#     print(str(x + y))
+#     print(str(first_number + second_number))
 #     print("--------------------------------")
 
 
