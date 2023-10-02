@@ -4,14 +4,14 @@
 """
 
 # Harmful solution
-# def f(a, L=[]):
-#     L.append(a)
+# def examp(value_append, list_examp=[]):
+#     list_examp.append(value_append)
 
-#     return L
+#     return list_examp
 
-# print(f(1))
-# print(f(2))
-# print(f(3))
+# print(examp(1))
+# print(examp(2))
+# print(examp(3))
 
 
 # Idiomatic solution
