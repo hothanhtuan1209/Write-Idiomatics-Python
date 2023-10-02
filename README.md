@@ -20,7 +20,11 @@ Repositories includes 4 chapters:
 > cd + 'file name'
 - example: cd Woking_with_data
 
-4. Open file in folder and run code
+4. In folder, use command to run any file
+> python filename.py
+- example: python useful_exceptions.py
+
+5. See the results in the terminal 
 
 ## Contribute
  - If you want to contribute to this project, please create a pull request and clearly describe the changes you propose
