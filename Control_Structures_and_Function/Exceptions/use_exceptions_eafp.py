@@ -30,7 +30,7 @@ def get_log_level(config_dict):
     str or None: The log level as a string if logging is enabled, or None if
     the necessary keys are not present in the configuration dictionary.
     """
-    
+
     try:
         if config_dict["ENABLE_LOGGING"]:
             return config_dict["DEFAULT_LOG_LEVEL"]
