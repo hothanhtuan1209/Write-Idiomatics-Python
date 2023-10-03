@@ -3,10 +3,10 @@
 """
 
 # Harmful solution
-# x = "foo"
-# y = "foo"
-# z = "foo"
+# first_parameter = "foo"
+# second_parameter = "foo"
+# third_parameter = "foo"
 
 
 # Idiomatic solution
-x = y = z = "foo"
+first_parameter = second_parameter = third_parameter = "foo"
