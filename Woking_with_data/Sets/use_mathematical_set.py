@@ -27,6 +27,7 @@ def get_both_popular_and_active_users():
     Returns:
     set: A set containing user names that are both popular and active.
     """
+    
     return(set(
         get_list_of_most_active_users()) & set(
             get_list_of_most_popular_users()))
