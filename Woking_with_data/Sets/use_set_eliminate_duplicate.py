@@ -49,6 +49,7 @@ def display(elements, output_format='html'):
 
     elif output_format == 'html':
         as_html = '<ul>'
+        
         for element in elements:
             as_html += '<li>{}</li>'.format(element)
 
