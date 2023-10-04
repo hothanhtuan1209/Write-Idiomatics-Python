@@ -1,5 +1,6 @@
 """
-- Use ord to get the ASCII code of a character and chr to get the character from an ASCII code.
+- Use ord to get the ASCII code of a character and chr to get the character
+from an ASCII code.
 """
 
 # Harmful solution
@@ -19,6 +20,7 @@
 
 # Idiomatic solution
 hash_value = 0
+some_string = ()
 
 for e in some_string:
     hash_value += ord(e)

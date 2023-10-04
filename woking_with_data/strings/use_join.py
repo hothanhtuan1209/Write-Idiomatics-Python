@@ -1,7 +1,8 @@
 """
 - Use ''.join when creating a single string for list elements.
 - It's faster, uses less memory, and you'll see it everywhere anyway.
-- Note that the two quotes represent the delimiter between list elements in the string we're creating.
+- Note that the two quotes represent the delimiter between list elements
+in the string we're creating.
 """
 
 # Harmful solution
