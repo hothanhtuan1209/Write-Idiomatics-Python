@@ -1,7 +1,9 @@
 """
 - Define __str__ in a class to show a human-readable representation.
-- When defining a class that is likely to be used with print(), the default Python representation isn't too helpful.
-- By defining a __str__ method, you can control how calling print on an instance of your class will look.
+- When defining a class that is likely to be used with print(), the default
+Python representation isn't too helpful.
+- By defining a __str__ method, you can control how calling print on an
+instance of your class will look.
 """
 
 # Harmful solution
@@ -24,12 +26,13 @@ class Point():
 
         self.first_value = first_value
         self.second_value = second_value
-    
+
     def __str__(self):
         """
         Return a string representation of the Point object.
         """
         return '{0}, {1}'.format(self.first_value, self.second_value)
+
 
 point = Point(1, 2)
 print(point)
