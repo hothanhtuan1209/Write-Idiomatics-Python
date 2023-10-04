@@ -19,19 +19,19 @@ instance of your class will look.
 
 # Idiomatic solution
 class Point():
-    def __init__(self, first_value, second_value):
+    def __init__(self, variable_1, variable_2):
         """
         Initialize a Point object with x and y coordinates.
         """
 
-        self.first_value = first_value
-        self.second_value = second_value
+        self.variable_1 = variable_1
+        self.variable_2 = variable_2
 
     def __str__(self):
         """
         Return a string representation of the Point object.
         """
-        return '{0}, {1}'.format(self.first_value, self.second_value)
+        return '{0}, {1}'.format(self.variable_1, self.variable_2)
 
 
 point = Point(1, 2)
