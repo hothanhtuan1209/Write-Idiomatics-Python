@@ -1,20 +1,27 @@
 """
-- Use leading underscores in function and variable names to denote “private” data.
-- In Python, all attributes of a class, including data and methods, are inherently "public" by default, which means they can be accessed from outside the class.
-- To ensure privacy and prevent naming conflicts, Python follows naming conventions:
-    1. To mark attributes as "protected" (not intended for direct external access), a single underscore prefix (_) is used.
-    2. To mark attributes as "private" (not intended for direct access or subclass override), a double underscore prefix (__) is used.
+- Use leading underscores in function and variable names to denote “private”
+data.
+- In Python, all attributes of a class, including data and methods, are
+inherently "public" by default, which means they can be accessed from outside
+the class.
+- To ensure privacy and prevent naming conflicts, Python follows naming
+conventions:
+    1. To mark attributes as "protected" (not intended for direct external
+    access), a single underscore prefix (_) is used.
+    2. To mark attributes as "private" (not intended for direct access or
+    subclass override), a double underscore prefix (__) is used.
 """
+import pytest
 
 # Harmful solution
 # class Foo():
 #     def __init__(self):
 #         self.id = 8
 #         self.value = self.get_value()
-    
+
 #     def get_value(self):
 #         pass
-    
+
 #     def should_destroy_earth(self):
 #         return self.id == 42
 
@@ -26,7 +33,7 @@
 #         take a parameter, trying to create a Baz instance will
 #         fail.
 #         """
-        
+
 #         pass
 
 
@@ -36,11 +43,11 @@
 #     This overwrites Foo's id attribute and we inadvertently
 #     blow up the earth.
 #     """
-    
+
 #     def __init__(self):
 #         super(Qux, self).__init__()
 #         self.id = 42
-    
+
 #     # No relation to Foo's id, purely coincidental
 
 # qux = Qux()
@@ -59,23 +66,24 @@ class Foo():
         """
 
         self.__id = 8
-        self.value = self.__get_value() # Our 'private copy'
-    
+        self.value = self.__get_value()  # Our 'private copy'
+
     def get_value(self):
         pass
-    
+
     def should_destroy_earth(self):
         return self.__id == 42
-    
+
     # Here, we're storing a 'private copy' of get_value,
     # and assigning it to '__get_value'. Even if a derived
     # class overrides get_value in a way incompatible with
     # ours, we're fine
-    __get_value = get_value
+    def __get_value(self):
+        return self.get_value()
 
 
 class Baz(Foo):
-    def get_value(self, some_new_parameter):
+    def get_value(self, some_new_parameter=None):
         pass
 
 
@@ -92,9 +100,10 @@ class Qux(Foo):
         # No relation to Foo's id, purely coincidental
         super(Qux, self).__init__()
 
+
 qux = Qux()
-baz = Baz() # Works fine now
-qux.should_destroy_earth() # returns False
-qux.id == 42 # returns True
+baz = Baz()  # Works fine now
+print(qux.should_destroy_earth())  # returns False
+print(qux.id == 42)  # returns True
 with pytest.raises(AttributeError):
-    getattr(qux, '__id')
+    getattr(qux, "__id")
