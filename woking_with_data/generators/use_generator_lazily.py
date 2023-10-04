@@ -13,7 +13,7 @@ efficient continuation.
 #     the client code needs to keep calling
 #     'get_twitter_livestream_for_user'. Not ideal.
 #     """
-    
+
 #     imaginary_twitter_api = ImaginaryTwitterAPI()
 #     if imaginary_twitter_api.can_get_stream_data(keyword):
 #         return imaginary_twitter_api.get_stream(keyword)
