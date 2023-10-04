@@ -1,6 +1,8 @@
 """
 - Make use of negative indexes.
-- Negative indices are perfectly acceptable. Rather than counting from the beginning of a list, negative indexes count backwards starting at the end of a list.
+- Negative indices are perfectly acceptable. Rather than counting from the
+beginning of a list, negative indexes count backwards starting at the end
+of a list.
 """
 
 # Harmful solution

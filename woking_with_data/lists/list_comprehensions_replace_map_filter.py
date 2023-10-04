@@ -1,6 +1,8 @@
 """
 - Prefer list comprehensions to the built-in map() and filter() functions.
--  While there are situations where these functions are appropriate, most cases can be replaced with list comprehensions, which are both more concise and more readable.
+-  While there are situations where these functions are appropriate, most
+cases can be replaced with list comprehensions, which are both more concise
+and more readable.
 """
 
 # Harmful solution
@@ -16,3 +18,4 @@
 # Idiomatic solution
 the_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 odd_numbers_times_two = [n * 2 for n in the_list if n % 2 == 1]
+print(odd_numbers_times_two)

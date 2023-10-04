@@ -1,6 +1,7 @@
 """
 - Use the * operator to represent the “rest” of a list
-- In Python 3, you can use the * operator on the left side of an assignment to represent the remaining part of a sequence
+- In Python 3, you can use the * operator on the left side of an assignment to
+represent the remaining part of a sequence
 """
 
 # Harmful solution
