@@ -1,7 +1,9 @@
 """
 - Use a generator to lazily load infinite sequences.
-- Generators are valuable in scenarios with infinite sequences or costly calculations, as they provide a way to iterate without precomputing.
-- They're special coroutines that yield iterables and save their state for efficient continuation.
+- Generators are valuable in scenarios with infinite sequences or costly
+calculations, as they provide a way to iterate without precomputing.
+- They're special coroutines that yield iterables and save their state for
+efficient continuation.
 """
 
 # Harmful solution
@@ -33,15 +35,37 @@
 
 
 # Idiomatic solution
+class ImaginaryTwitterAPI:
+    def can_get_stream_data(self, keyword):
+        pass
+
+    def get_stream(self, keyword):
+        pass
+
+
+def process_tweet(tweet):
+    pass
+
+
 def get_twitter_stream_for_keyword(keyword):
-    """Now, 'get_twitter_stream_for_keyword' is a generator
-    and will continue to generate Iterable pieces of data
-    one at a time until 'can_get_stream_data(user)' is
-    False (which may be never).
-    """
     imaginary_twitter_api = ImaginaryTwitterAPI()
     while imaginary_twitter_api.can_get_stream_data(keyword):
         yield imaginary_twitter_api.get_stream(keyword)
+
+
+got_stop_signal = False
+
+
+def first_incredibly_long_calculation(data):
+    pass
+
+
+def second_incredibly_long_calculation(data):
+    pass
+
+
+def third_incredibly_long_calculation(data):
+    pass
 
 
 # Because it's a generator, I can sit in this loop until
@@ -50,8 +74,8 @@ def get_twitter_stream_for_keyword(keyword):
 for tweet in get_twitter_stream_for_keyword('#jeffknupp'):
     if got_stop_signal:
         break
+    process_tweet(tweet)
 
-process_tweet(tweet)
 
 def get_list_of_incredibly_complex_calculation_results(data):
     """A simple example to be sure, but now when the client
