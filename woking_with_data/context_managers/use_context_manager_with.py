@@ -11,8 +11,15 @@
 
 
 # Idiomatic solution
-with open(path_to_file, 'r') as file_handle:
-    
+
+path_to_file = "your_file.txt"
+
+
+def raise_exception(line):
+    pass
+
+
+with open(path_to_file, 'r', encoding='utf-8') as file_handle:
     for line in file_handle:
         if raise_exception(line):
             print('No! An Exception!')

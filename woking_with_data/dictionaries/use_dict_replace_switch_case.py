@@ -1,7 +1,10 @@
 """
 - Use a dict as a substitute for a switch...case statement.
-- Functions are treated as values and stored in dictionaries, allowing for clear, efficient dispatch based on keys, such as mapping operators in a calculator.
-- This approach can be applied to various scenarios, showcasing Python's flexibility and the power of treating everything as an object.
+- Functions are treated as values and stored in dictionaries, allowing for
+clear, efficient dispatch based on keys, such as mapping operators in a
+calculator.
+- This approach can be applied to various scenarios, showcasing Python's
+flexibility and the power of treating everything as an object.
 """
 
 import operator as op

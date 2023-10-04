@@ -1,6 +1,7 @@
 """
 - Use the default parameter of dict.get to provide default values.
-- Without using default (or the collections.defaultdict class), your code will be littered with confusing if statements.
+- Without using default (or the collections.defaultdict class), your code will
+be littered with confusing if statements.
 """
 
 # Harmful solution
@@ -13,4 +14,5 @@
 
 
 # Idiomatic solution
+configuration = {}
 log_severity = configuration.get('severity', 'Info')
