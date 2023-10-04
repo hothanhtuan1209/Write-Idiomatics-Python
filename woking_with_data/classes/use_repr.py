@@ -24,6 +24,10 @@ it should allow distinguishing between different instances.
 
 # Idiomatic solution
 class Foo():
+    """
+    A class representing a Foo object.
+    """
+    
     def __init__(self, bar=10, baz=12, cache=None):
         """
         Initialize a Foo object.
