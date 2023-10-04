@@ -1,5 +1,6 @@
 """
-- Using multiple assignment to assign the same value to multiple variables efficiently, improving code readability by reducing redundancy.
+- Using multiple assignment to assign the same value to multiple variables
+efficiently, improving code readability by reducing redundancy.
 """
 
 # Harmful solution
