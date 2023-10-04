@@ -18,3 +18,5 @@ list_from_comma_separated_value_file = ['dog', 'Fido', 10]
 (animal, name, age) = list_from_comma_separated_value_file
 output = ('{name} the {animal} is {age} years old'.format(
     animal=animal, name=name, age=age))
+
+print(output)
