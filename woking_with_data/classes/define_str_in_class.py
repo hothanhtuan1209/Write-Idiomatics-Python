@@ -19,6 +19,10 @@ instance of your class will look.
 
 # Idiomatic solution
 class Point():
+    """
+    A class representing a point in a two-dimensional space.
+    """
+
     def __init__(self, variable_1, variable_2):
         """
         Initialize a Point object with x and y coordinates.
