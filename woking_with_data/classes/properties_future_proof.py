@@ -6,7 +6,6 @@ handling.
 code.
 """
 
-
 # Harmful solution
 # class Product():
 #     def __init__(self, name, price):
