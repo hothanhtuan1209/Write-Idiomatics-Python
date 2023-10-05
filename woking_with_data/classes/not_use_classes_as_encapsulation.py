@@ -48,7 +48,7 @@ def count_occurrences(string, key):
         string (str): The string to count occurrences in.
         key (str): The character or substring to count.
 
-    return:
+    Returns:
         int: The number of times 'key' appears in 'string'.
     """
 
