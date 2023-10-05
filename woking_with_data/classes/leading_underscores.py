@@ -11,6 +11,7 @@ conventions:
     2. To mark attributes as "private" (not intended for direct access or
     subclass override), a double underscore prefix (__) is used.
 """
+
 import pytest
 
 # Harmful solution
