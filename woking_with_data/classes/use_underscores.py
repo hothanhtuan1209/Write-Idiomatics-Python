@@ -58,8 +58,13 @@ import pytest
 
 # Idiomatic solution
 class Foo():
+    """
+    A class representing a Foo object.
+    """
+
     def __init__(self):
-        """Since 'id' is of vital importance to us, we don't
+        """
+        Since 'id' is of vital importance to us, we don't
         want a derived class accidentally overwriting it. We'll
         prepend with double underscores to introduce name
         mangling.
@@ -69,16 +74,27 @@ class Foo():
         self.value = self.__get_value()  # Our 'private copy'
 
     def get_value(self):
+        """
+        Get the value
+        """
+
         pass
 
     def should_destroy_earth(self):
+        """
+        Check if '__id' is equal to 42.
+
+        Returns:
+            bool: True if '__id' is equal to 42, False otherwise.
+        """
+
         return self.__id == 42
 
-    # Here, we're storing a 'private copy' of get_value,
-    # and assigning it to '__get_value'. Even if a derived
-    # class overrides get_value in a way incompatible with
-    # ours, we're fine
     def __get_value(self):
+        """
+        A 'private copy' of the 'get_value' method.
+        """
+
         return self.get_value()
 
 
