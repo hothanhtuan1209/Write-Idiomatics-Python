@@ -84,6 +84,7 @@ def get_list_of_incredibly_complex_calculation_results(data):
     we only do as much work as necessary to generate the
     current item.
     """
+
     yield first_incredibly_long_calculation(data)
     yield second_incredibly_long_calculation(data)
     yield third_incredibly_long_calculation(data)
