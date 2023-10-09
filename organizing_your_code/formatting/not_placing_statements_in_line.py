@@ -6,6 +6,7 @@ doing so without reason makes one's code harder to read.
 the situation is even further confused.
 """
 
+
 # Harmful solution
 # my_list = []
 # for element in my_list: print(element); print('--------')
