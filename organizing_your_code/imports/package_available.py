@@ -7,14 +7,6 @@ a fallback package must be used.
 block.
 """
 
-
-# Harmful solution
-# import cProfile
-# Uh-oh! The user doesn't have cProfile installed! Raise an exception
-# here...
-# print(cProfile.__all__)
-
-
 # Idiomatic solution
 try:
     import cProfile as profiler
@@ -22,3 +14,10 @@ try:
 except:
     import profile as profiler
 print(profiler.__all__)
+
+
+# Harmful solution
+# import cProfile
+# Uh-oh! The user doesn't have cProfile installed! Raise an exception
+# here...
+# print(cProfile.__all__)

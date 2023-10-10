@@ -5,13 +5,11 @@ with an "as" clause to keep your namespace clean and organized.
 """
 
 
-# Harmful solution
-# from foo import *
-
-
 # Idiomatic solution
 from foo import (bar, baz, qux,
         quux, quuux)
-
-# or even better...
 import foo
+
+
+# Harmful solution
+# from foo import *

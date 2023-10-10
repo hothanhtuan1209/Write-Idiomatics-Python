@@ -6,11 +6,11 @@ the code cleaner and more organized.
 """
 
 
-# Harmful solution
-from django.db.models import AutoField, BigIntegerField, BooleanField, CharField
-from django.db.models import CommaSeparatedIntegerField, DateField, DateTimeField
-
-
 # Idiomatic solution
 from django.db.models import (AutoField, BigIntegerField, BooleanField,
         CharField, CommaSeparatedIntegerField, DateField, DateTimeField)
+
+
+# Harmful solution
+# from django.db.models import AutoField, BigIntegerField, BooleanField, CharField
+# from django.db.models import CommaSeparatedIntegerField, DateField, DateTimeField
