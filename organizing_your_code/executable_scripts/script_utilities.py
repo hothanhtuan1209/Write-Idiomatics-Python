@@ -11,19 +11,18 @@ import sys
 
 # Harmful solution
 # if __name__ == '__main__':
-#     import sys
 
-     # What happens if no argument is passed on the
-     # command line?
-     # if len(sys.argv) > 1:
-     #     argument = sys.argv[1]
-     #     result = do_stuff(argument)
+    # What happens if no argument is passed on the
+    # command line?
+    # if len(sys.argv) > 1:
+    #     argument = sys.argv[1]
+    #     result = do_stuff(argument)
 
-     # Again, what if this is False? How would other
-     # programs know?
+    # Again, what if this is False? How would other
+    # programs know?
 
-     # if result:
-     #     do_stuff_with_result(result)
+    # if result:
+    #     do_stuff_with_result(result)
 
 
 # Idiomatic solution

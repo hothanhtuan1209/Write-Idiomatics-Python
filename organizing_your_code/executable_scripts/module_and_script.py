@@ -11,16 +11,12 @@ import os
 
 
 # Harmful solution
-# import sys
-# import os
-
-
 # FIRST_NUMBER = float(sys.argv[1])
 # SECOND_NUMBER = float(sys.argv[2])
 
 
-# def divide(a, b):
-#     return a / b
+# def divide(first_parameter, second_parameter):
+#     return first_parameter / second_parameter
 
 # I can't import this file (for the super
 # useful 'divide' function) without the following
@@ -32,8 +28,21 @@ import os
 
 
 # Idiomatic solution
-def divide(a, b):
-    return a / b
+def divide(first_parameter, second_parameter):
+    """
+    Divide the first parameter by the second parameter.
+
+    Parameters:
+        first_parameter (int): The dividend.
+        second_parameter (int): The divisor.
+
+    Returns:
+        int: The result of dividing the first parameter by the second
+        parameter.
+
+    """
+
+    return first_parameter / second_parameter
 
 # Will only run if script is executed directly,
 # not when the file is imported as a module
