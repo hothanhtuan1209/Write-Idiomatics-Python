@@ -27,10 +27,24 @@ import sys
 
 # Idiomatic solution
 def do_stuff(argument):
+    """
+    Perform some action using the provided argument.
+
+    Args:
+        argument: The input argument for the action.
+    """
+
     return True
 
 
 def do_stuff_with_result(result):
+    """
+    Perform some action using the result of a previous operation.
+
+    Args:
+        result: The result obtained from a previous operation.
+    """
+
     pass
 
 
