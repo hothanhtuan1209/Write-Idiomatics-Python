@@ -12,23 +12,30 @@ with an "as" clause to keep your namespace clean and organized.
 """
 
 
-# Idiomatic solutio
+# Rules about the order of import commands
+import os.path
+import sys
+import requests
+
+from flask import (Flask, request, session, g,
+    redirect, url_for, abort,
+    render_template, flash, _app_ctx_stack)
+from django.db.models import (AutoField, BigIntegerField, BooleanField,
+    CharField, CommaSeparatedIntegerField, DateField, DateTimeField)
+
 import package.other_module
 import package.other_module as other
-from django.db.models import (AutoField, BigIntegerField, BooleanField,
-        CharField, CommaSeparatedIntegerField, DateField, DateTimeField)
-
 from foo import (bar, baz, qux,
-        quux, quuux)
-import foo
+    quux, quuux)
+import concurrent.futures
+import this_project.utilities.sentient_network as skynet
+import this_project.widgets
 
 
-# Harmful solution
-# My location is package.sub_package.module
-# and I want to import package.other_module.
-# The following should be avoided:
-# from ...package import other_module
-# from django.db.models import AutoField, BigIntegerField, BooleanField, CharField
-# from django.db.models import CommaSeparatedIntegerField, DateField, DateTimeField
+# Use a try block to determine if a package is available.
+try:
+    import cProfile as profiler
 
-# from foo import *
+except:
+    import profile as profiler
+print(profiler.__all__)
