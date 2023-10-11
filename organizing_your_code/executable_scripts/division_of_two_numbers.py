@@ -33,8 +33,8 @@ def divide(first_parameter, second_parameter):
     Divide the first parameter by the second parameter.
 
     Parameters:
-        first_parameter (int): The dividend.
-        second_parameter (int): The divisor.
+        first_parameter (float): The divisor.
+        second_parameter (float): The divisor.
 
     Returns:
         int: The result of dividing the first parameter by the second
