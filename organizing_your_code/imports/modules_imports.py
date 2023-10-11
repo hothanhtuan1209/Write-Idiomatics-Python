@@ -39,3 +39,13 @@ try:
 except:
     import profile as profiler
 print(profiler.__all__)
+
+
+# Idiomatic solution
+my_list = []
+for element in my_list:
+    print(element)
+    print('--------')
+
+    # Avoid placing multiple statements on a single line
+    # for element in my_list: print(element); print('--------')
