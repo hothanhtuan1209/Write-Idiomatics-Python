@@ -28,7 +28,7 @@ def my_addition(first_parameter, second_parameter):
     """
     Return the result of adding two numbers.
 
-    Args:
+    Parameters:
         first_parameter (int): The first number.
         second_parameter (int): The second number.
 
@@ -43,7 +43,7 @@ def increment(parameter):
     """
     Return the value greater than the input number.
 
-    Args:
+    Parameters:
         parameter (int): The input number.
 
     Returns:
@@ -53,12 +53,12 @@ def increment(parameter):
     return parameter + 1
 
 
-def get_divisors(n):
+def get_divisors(exam_parameter):
     """
     Return the divisors of a number.
 
-    Args:
-        n (int): The input number.
+    Parameters:
+        exam_parameter (int): The input number.
 
     Returns:
         list: A list of divisors of the input number. An empty list is
