@@ -76,7 +76,7 @@ class Test(unittest.TestCase):
         - Testing the increment function.
         - Check that the get_divisors function returns None for prime numbers.
     """
-    
+
     def test_adding_positive_ints(self):
         """
         Does adding together two positive integers work?
