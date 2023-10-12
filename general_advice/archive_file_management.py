@@ -5,9 +5,8 @@
 and makes your code much easier to understand.
 """
 
-
-from datetime import date
 import os
+from datetime import date
 
 
 # Harmful solution
