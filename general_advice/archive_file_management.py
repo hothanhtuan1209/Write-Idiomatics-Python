@@ -21,22 +21,22 @@ from datetime import date
 
 
 # Idiomatic solution
-current_directory = os.getcwd()
+
 # Assign the current directory value to variable
-
+current_directory = os.getcwd()
 filename_to_archive = 'test.txt'
-# Assign the file name to archive to variable
 
-new_filename = os.path.splitext(filename_to_archive)[0] + '.bak'
 # Create a new filename in filename.bak format
+new_filename = os.path.splitext(filename_to_archive)[0] + '.bak'
 
-target_directory = os.path.join(current_directory, 'archives')
 # Create target_directory by connect current_directory to archive folder
-
+target_directory = os.path.join(current_directory, 'archives')
 today = date.today()
-new_path = os.path.join(target_directory, str(today))
+
 # Create the new_path variable by concatenating target_directory with the
 # current date converted to string.
+new_path = os.path.join(target_directory, str(today))
+
 
 if (os.path.isdir(target_directory)):
     # Check if the target_directory directory exists or not.
@@ -44,8 +44,8 @@ if (os.path.isdir(target_directory)):
     if not os.path.exists(new_path):
         # Check if the new_path directory exists or not.
 
-        os.mkdir(new_path)
         # Create a new directory called new_path if it doesn't already exist.
+        os.mkdir(new_path)
 
     os.rename(
         os.path.join(current_directory, filename_to_archive),
