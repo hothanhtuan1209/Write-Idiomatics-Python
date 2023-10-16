@@ -28,13 +28,11 @@ def avoids():
 
     words = input('Enter words separated by space:').split()
     letters = input('Enter a string of forbidden letters:')
-    total = 0
 
-    for word in words:
+    for total, word in enumerate(words):
         # Does each word in word contain each letter in letters?
         if any(letter in word for letter in letters):
             continue
-        total += 1
 
     print(total)
 
