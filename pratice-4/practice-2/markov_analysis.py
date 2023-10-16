@@ -18,12 +18,13 @@ def read_text(filename):
     """
     Reads a text from a file and returns it as a string.
 
-    filename: string, name of the test file
+    Parameter:
+        - filename: string, name of the test file
 
     returns: string
     """
 
-    with open(filename, 'r', encoding='utf-8') as file:
+    with open(filename, "r", encoding="utf-8") as file:
         text = file.read()
 
     return text
@@ -33,8 +34,9 @@ def markov_analysis(text, prefix_length):
     """
     Performs Markov analysis on the given text.
 
-    text: string
-    prefix_length: int
+    Parameters:
+        - text: string
+        - prefix_length: int
 
     returns: dict
     """
@@ -58,14 +60,15 @@ def random_markov(prefixes, prefix_length, num_words):
     """
     Randomly generate 1 text from the dictionary
 
-    prefixes: dict
-    prefix_length: int
-    num_words: int
+    Parameters:
+        - prefixes: dict
+        - prefix_length: int
+        - num_words: int
 
     returns: string
     """
 
-    random_text = ''
+    random_text = ""
     prefix_list = list(random.choice(list(prefixes.keys())))
 
     for _ in range(num_words):
@@ -73,7 +76,7 @@ def random_markov(prefixes, prefix_length, num_words):
 
         if prefix in prefixes:
             suffix = random.choice(prefixes[prefix])
-            random_text += suffix + ' '
+            random_text += suffix + " "
             prefix_list.append(suffix)
         else:
             break
@@ -83,7 +86,7 @@ def random_markov(prefixes, prefix_length, num_words):
 
 num_words = 50
 prefix_length = 5
-filename = 'markov.txt'
+filename = "markov.txt"
 text = read_text(filename)
 print(markov_analysis(text, prefix_length))
 
