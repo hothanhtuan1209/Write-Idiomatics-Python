@@ -16,18 +16,11 @@ def is_triple_double(word):
     """
 
     i = 0
-    count = 0
 
-    while i < len(word)-1:
-        # Check through 2 characters next to each other
-        if word[i] == word[i+1]:
-            count += 1
-            if count == 3:
-                return True
-            i += 2
-        else:
-            i = i + 1 - 2*count
-            count = 0
+    while i < len(word) - 5:
+        if word[i] == word[i+1] and word[i+2] == word[i+3] and word[i+4] == word[i+5]:
+            return True
+        i += 1
 
     return False
 
@@ -37,7 +30,7 @@ def find_triple_double():
      Reads a word list from a file and prints words with triple double letters.
     """
 
-    fin = open('words.txt')
+    fin = open('F:\python-training\python-training\practice-1\words.txt')
 
     for line in fin:
         word = line.strip()
