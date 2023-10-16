@@ -7,6 +7,19 @@ at least once.
 
 
 def uses_all(word, required_letters):
+    """
+    Check if a word contains all the required letters.
+
+    Parameters:
+        - word (str): The word to check.
+        - required_letters (str): A string containing the letters that must be
+        present in 'word'.
+
+    Returns:
+        - bool: True if 'word' contains all the required letters, False
+        otherwise.
+    """
+
     for letter in required_letters:
         if letter not in word:
             return False
@@ -15,6 +28,17 @@ def uses_all(word, required_letters):
 
 
 def count_words_vowel(required_letters):
+    """
+    Count the number of words in a list that contain all the required letters.
+
+    Parameters:
+        - required_letters (str): A string containing the letters that must be 
+        present in each word.
+
+    Returns:
+        - int: The count of words that contain all the required letters.
+    """
+
     words = input('Enter a list of words: ').split()
     count = 0
 
@@ -24,4 +48,4 @@ def count_words_vowel(required_letters):
     return count
 
 
-print(count_words_vowel('aeiou')) # Check tratures with the field 'aeiouy'
+print(count_words_vowel('aeiou'))
