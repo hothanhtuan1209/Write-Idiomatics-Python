@@ -30,7 +30,7 @@ def find_triple_double():
      Reads a word list from a file and prints words with triple double letters.
     """
 
-    fin = open('F:\python-training\python-training\practice-1\words.txt')
+    fin = open('words.txt')
 
     for line in fin:
         word = line.strip()
