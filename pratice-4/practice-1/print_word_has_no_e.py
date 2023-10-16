@@ -38,7 +38,7 @@ def count_words():
     words_has_no_e = 0
 
     for word in words:
-        if 'e' not in word and 'E' not in word:
+        if 'e' and 'E' not in word:
             print(word)
             words_has_no_e += 1
 
