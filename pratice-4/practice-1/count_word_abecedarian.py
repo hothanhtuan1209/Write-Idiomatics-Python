@@ -17,13 +17,10 @@ def is_abecedarian(word):
         bool: True if the word is in alphabetical order, False otherwise.
     """
 
-    index = 0
-
-    while index < len(word) - 1:
-        if word[index] > word[index+1]:
+    for i in range(len(word) - 1):
+        if word[i] > word[i + 1]:
             return False
-        else:
-            index += 1
+
     return True
 
 
