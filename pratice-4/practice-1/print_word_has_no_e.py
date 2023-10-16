@@ -8,7 +8,12 @@ no “e”.
 
 
 def has_no_e():
-    # Check the letters E and E in the word
+    """
+    Check if a word or string contains the letter 'e' or 'E'.
+
+    Returns:
+        - bool: True if there is no 'e' or 'E' in the word, False otherwise.
+    """
     word = input('Enter a word or string:')
 
     for letter in word:
@@ -23,7 +28,11 @@ print(result)
 
 
 def count_words():
-    # Count and calculate the percentage of words that do not have 'E' and 'e'
+    """
+    Count and calculate the percentage of words that do not contain 'E' or 'e'
+    in a list of words.
+    """
+
     words = input("Enter the list of words: ").split()
     count_word = len(words)
     words_has_no_e = 0
