@@ -15,8 +15,7 @@ def is_palindrome(digits):
     bool: True if the number is a palindrome, False otherwise.
     """
 
-    if digits == digits[::-1]:
-        return True
+    return digits == digits[::-1]
 
 
 def check_odometer():
