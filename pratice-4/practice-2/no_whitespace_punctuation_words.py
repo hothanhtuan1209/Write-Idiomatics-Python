@@ -16,6 +16,14 @@ import string
 def clean_word():
     """
     Reads a file and processes its content.
+
+    Reads a file named 'test.txt', processes its content, and stores cleaned
+    words in a list.
+    The cleaning process involves removing whitespace and punctuation from
+    each word, and converting the word to lowercase.
+
+    Returns:
+        - list: A list of cleaned words.
     """
 
     fin = open('test.txt')
